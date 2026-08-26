@@ -129,13 +129,13 @@ footer{background:#111;color:#555;text-align:center;padding:24px 5%;font-size:13
     <p class="hero-eyebrow"><span class="avail-dot"></span> PORTFOLIO 2026</p>
     <h1 class="hero-name">Essa Rokhmania<br>Ulul Azmy</h1>
     <p class="hero-role">AI Engineer — <span class="typed" id="typed-text"></span><span id="cursor" style="color:var(--red)">|</span></p>
-    <p class="hero-desc">I build intelligent systems — RAG pipelines, TTS evaluation frameworks, production APIs, and multi-agent apps. Fresh off a rich year in AI engineering and looking for the next challenge.</p>
+    <p class="hero-desc">I build RAG pipelines, TTS evaluation frameworks, production APIs, and multi-agent apps. Fresh off a rich year in AI engineering and looking for the next challenge.</p>
     <div class="hero-cta">
       <a href="#experience" class="btn-primary">See My Work</a>
       <a href="#contact" class="btn-outline">Let's Talk</a>
     </div>
     <div class="hero-tags">
-      <span class="tag">Speech-Language Models</span>
+      <span class="tag">Text-to-Speech Models</span>
       <span class="tag">RAG Pipelines</span>
       <span class="tag">NLP</span>
       <span class="tag">Deep Learning</span>
@@ -151,7 +151,7 @@ footer{background:#111;color:#555;text-align:center;padding:24px 5%;font-size:13
     <h2 class="section-title">Mathematics meets machine intelligence.</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>I'm an <strong>AI Engineer</strong> who researched and deployed next-generation Speech-Language Models and shipped production-grade AI systems.</p>
+        <p>I'm an <strong>AI Engineer</strong> who researched and deployed next-generation Text-to-Speech Models and shipped production-grade AI systems.</p>
         <p>My background is in <strong>Mathematics (Universitas Negeri Malang, GPA 3.66)</strong>, which gives me a solid grasp of the theory behind the models I build. My undergraduate thesis focused on NLP applied to Indonesian political discourse.</p>
         <p>I'm now <strong>actively exploring my next role</strong> — ideally somewhere I can go deep on AI systems, keep building things that work in the real world, and grow fast alongside a great team.</p>
         </div>
@@ -230,11 +230,11 @@ footer{background:#111;color:#555;text-align:center;padding:24px 5%;font-size:13
       </div>
       <div class="exp-role">AI Engineer · Jakarta, Indonesia</div>
       <ul class="exp-bullets">
-        <li> <strong>Evaluated and benchmarked</strong> 3+ TTS models (Qwen3-TTS, VoxCPM2, OmniVoice etc) for production readiness</li>
-        <li> <strong>Deployed a production REST API wrapper</strong> for the adopted model</li>
-        <li> <strong>Executed end-to-end integration testing</strong> for a Voice RAG pipeline (STT → RAG → TTS) via FastRTC</li>
-        <li>Built an <strong>end-to-end document Q&A bot</strong> (RAG pipeline) and a <strong>multi-agent AI recruitment app</strong> with Profile Extractor and Gap Analyst agents</li>
-        <li>Developed <strong>Robocall platform</strong> Insight & Report modules </li>
+        <li><strong>Researched and evaluated</strong> 3+ state-of-the-art TTS models based on latency (RTF), infrastructure cost, and hardware resource usage (VRAM).</li>
+        <li><strong>Conducted hands-on testing</strong> by deploying local TTS models on GPU servers and performing Side-by-Side (SxS) human evaluation with 10+ evaluators to measure voice quality.</li>
+        <li><strong>Recommended the most suitable AI solutions</strong> and created comprehensive integration guidelines, including API documentation and text preprocessing requirements for internal AI adoption.</li>
+        <li>Built an <strong>end-to-end document Q&A bot</strong> (RAG pipeline) and a <strong>multi-agent AI recruitment app</strong> with Profile Extractor and Gap Analyst agents.</li>
+        <li>Developed <strong>Robocall platform</strong> Insight & Report modules.</li>
       </ul>
     </div>
 
@@ -278,10 +278,58 @@ footer{background:#111;color:#555;text-align:center;padding:24px 5%;font-size:13
     <p class="section-label">Projects</p>
     <h2 class="section-title">Things I've built.</h2>
     <div class="projects-grid">
+      
+      <!-- FEATURED CASE STUDY -->
+      <div class="project-card" style="grid-column: 1 / -1; border: 2px solid var(--red); background: var(--white);">
+        <div class="project-year" style="color: var(--red);">FEATURED CASE STUDY • 2026</div>
+        <h3 class="project-title" style="font-size: 22px;">Research & Benchmarking TTS Models for Production</h3>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 12px;">
+          <div>
+            <p class="project-desc" style="margin-bottom: 12px;">
+              <strong>The Challenge:</strong> Evaluated and benchmarked 3+ state-of-the-art TTS models (OmniVoice, Qwen3, VoxCPM2, etc) to find a high-quality, cost-effective local GPU solution to replace expensive cloud APIs.
+            </p>
+            <p class="project-desc" style="margin-bottom: 12px;">
+              <strong>The Action:</strong> Conducted latency tests (RTF) and VRAM monitoring. Built a Streamlit app to facilitate Side-by-Side (SxS) blind human evaluation (MOS) with 10+ evaluators. Created text-preprocessing rules for Indonesian numerical formats and deployed the chosen model via FastAPI.
+            </p>
+            <p class="project-desc">
+              <strong>The Result:</strong> Successfully adopted OmniVoice (48% blind test preference) and reduced marginal API costs to ~$0.
+            </p>
+            <div class="project-tags" style="margin-top: 20px;">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">Streamlit</span>
+              <span class="project-tag">OmniVoice</span>
+              <span class="project-tag">A/B Testing</span>
+            </div>
+          </div>
+          
+          <!-- IMAGE GRID -->
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <!-- Main UI Image -->
+            <div style="border-radius: 6px; overflow: hidden; border: 1px solid var(--grey-light); background: #1a1a1a;">
+              <img src="case_porto1.jpeg" alt="TTS Evaluation Setup" style="width: 100%; height: auto; display: block; opacity: 0.95;">
+            </div>
+            
+            <!-- Side-by-side Images -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <div style="border-radius: 6px; overflow: hidden; border: 1px solid var(--grey-light); background: #1a1a1a;">
+                <img src="case_porto2.png" alt="Blind Test Interface" style="width: 100%; height: auto; display: block; opacity: 0.95;">
+              </div>
+              <div style="border-radius: 6px; overflow: hidden; border: 1px solid var(--grey-light); background: #fff;">
+                <img src="case_porto3.png" alt="Cost Analysis Data" style="width: 100%; height: auto; display: block;">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- END FEATURED CASE STUDY -->
+
       <div class="project-card">
         <div class="project-year">2026</div>
         <div class="project-title">End-to-End Voice RAG Pipeline</div>
-        <div class="project-desc">Collaborated in a team to integrate and test a real-time voice pipeline (STT → RAG → TTS) using FastRTC.</div>
+        <div class="project-desc">Acted as the technical guide for frontend-backend API mapping and UI integration for a real-time voice pipeline (STT → RAG → TTS) alongside backend engineers.</div>
         <div class="project-tags">
           <span class="project-tag">Voice AI</span>
           <span class="project-tag">FastRTC</span>
